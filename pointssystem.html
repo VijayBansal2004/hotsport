@@ -1,0 +1,2062 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+	<link rel="stylesheet" href="css/flaticon.css" media="all">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://rawcdn.githack.com/hung1001/font-awesome-pro/4cac1a6/css/all.css">
+    <title>HotSport</title>
+	<style>
+		.details-container{
+			display: flex;
+		}
+		.icon-container{
+			border-radius: 10px;
+			width: 55px;
+			height: 55px;
+			display: flex;
+			place-content: center;
+			background-color: #d12f2f;
+			box-shadow: 0px 0px 3px 0px;
+			padding: 8px;
+		}
+		.icon-container img{
+			width: 40px;
+			filter: invert(1);
+		}
+		.right-0{
+			right: 0;
+		}
+		.accordion-container{
+			overflow: hidden;
+		}
+		.accordion-image{
+			height: 620px;
+			border-radius: 10px;
+			width: auto !important;
+		}
+		@media(max-width:1025px){
+			.accordion-image-container{
+				display: none;
+			}
+		}
+		@media(max-width:400px){
+			.details-container{
+				flex-direction: column;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				gap: 15px;
+			}
+			.info-container{
+				margin: 0 !important;
+			}
+		}
+
+	</style>
+</head>
+
+<body class="pointsystem">
+    <header>
+        <div class="container">
+			<nav class="navbar navbar-expand-lg main-menu">
+				<a class="navbar-brand logo" href="index.html"><img src="images/logo.png" class=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>			  
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="play.html">How To Play</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="pointssystem.html">Point System</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="aboutus.html">About Us</a>
+					</li>
+				
+					<li class="nav-item">
+					  <a class="nav-link" href="fairplay.html">Fair play</a>
+					</li>
+				  </ul>				 
+				</div>
+				<div class="appdownload">
+					<a href="https://hotsports.io/apk/Hotsports.v1.apk">Download App On <i class="fa fa-android"></i></a>
+				</div>
+			  </nav>	
+        </div>
+    </header>
+	
+	<section class="inner-banner p-0">
+		<img src="images/pointsystems-banner.jpg"/>
+	</section>
+
+	<section class="sports_tab">
+		<div class="container-fluid p-0">
+			<ul class="nav nav-tabs">
+				<li><a href="#cricket" class="active" data-toggle="tab">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23.997" height="22.012" viewBox="0 0 21.997 22.012">
+				  <path id="ic_cricket" d="M3.837,17.69l.594.583-.682.671a9.891,9.891,0,0,0,.924,1.221l15.492-15.5a12.016,12.016,0,0,0-1.21-.913l-.682.671-.583-.583.528-.528A11,11,0,0,0,3.32,18.218ZM16.149,5.378l.583.583L15.2,7.5l-.583-.583Zm-3.07,3.081.572.583-1.529,1.54L11.539,10ZM10,11.54l.583.583-1.54,1.529-.583-.583ZM6.918,14.61,7.5,15.2l-1.54,1.54-.583-.583Zm.132,7.647.682-.671.583.583-.528.528a11,11,0,0,0,14.9-14.909l-.517.528-.594-.583.682-.671a9.9,9.9,0,0,0-.924-1.221L5.84,21.343A12,12,0,0,0,7.05,22.256ZM20.044,9.273l.583.583-1.54,1.54L18.5,10.8Zm-3.081,3.081.583.583-1.54,1.529-.583-.583Zm-3.081,3.07.583.583-1.529,1.54-.594-.583ZM10.8,18.5l.583.583-1.54,1.54-.583-.583Z" transform="translate(-2.004 -1.997)" fill="#b8b8b8"></path>
+				</svg> Cricket</a></li>
+				<li><a href="#football" data-toggle="tab" class="">
+				<svg xmlns="http://www.w3.org/2000/svg" width="22.032" height="22.032" viewBox="0 0 22.032 22.032">
+				  <path id="Vector" d="M11.766.25A11.016,11.016,0,1,0,22.782,11.266,11.029,11.029,0,0,0,11.766.25Zm7.449,15.681H16.738L15.843,14.4l.795-3.2,1.579-.669,2.259,1.944A8.731,8.731,0,0,1,19.215,15.931Zm-13.9-5.406,1.578.671.794,3.2-.895,1.536H4.318a8.733,8.733,0,0,1-1.261-3.461Zm13.191-4.9L17.532,8.4l-1.648.7-3.006-2.52V4.723L15.2,3.176a8.838,8.838,0,0,1,3.306,2.453ZM8.331,3.174l2.323,1.548V6.575L7.648,9.1,6,8.4,5.025,5.627A8.838,8.838,0,0,1,8.331,3.174Zm1.4,16.646L8.667,17.136l.847-1.457h4.5l.851,1.458-1.059,2.68a8.8,8.8,0,0,1-4.078,0Z" transform="translate(-0.75 -0.25)" fill="#b8b8b8"></path>
+				</svg> Football</a></li>								
+			</ul>
+		</div><!--container-fluid-->
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="tab-content">
+						<div class="tab-pane active" id="cricket">
+							<div class="createsec mt-0">	
+								<ul class="nav nav-tabs">
+									<li><a href="#t20" class="active" data-toggle="tab">T20</a></li>
+									<li><a href="#odi" data-toggle="tab" class="">ODI</a></li>								
+									<li><a href="#test" data-toggle="tab" class="">Test</a></li>								
+									<li><a href="#t10" data-toggle="tab" class="">T10</a></li>								
+									<li><a href="#hundred" data-toggle="tab" class="">Hundred</a></li>								
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="t20">
+										<h4>Hotsport Points (T20)</h4>
+										<div class="tab_in_cont">
+											<div class="row">
+												<div class="col-md-4 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/batting.svg"/> Batting</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">For every run scored</td>
+																		<td class="text-right text-green">+1 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Duck Out (Not applicable for bowlers)</td>
+																		<td class="text-right text-red">-15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 4 hit</td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 6 hit</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">25 - 49 Runs</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">50 - 74 Runs</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">75 - 99 Runs</td>
+																		<td class="text-right text-green">+30 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">100+ Runs</td>
+																		<td class="text-right text-green">+50 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Strike Rate (Except Bowler) Points</strong> (Min 10 Balls To Be Played)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 0 - 74.99</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 75 - 99</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 100 - 149.99</td>
+																		<td class="text-right text-green">+5 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 150 - 199.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 200+</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/bowling.svg"/> Bowling</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Per wicket taken</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every dot ball </td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every maiden</td>
+																		<td class="text-right text-green">+20 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">2 Wickets</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Every wicket thereafter</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Economy Rate Points</strong> (Min 10 Balls To Be Played)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 0 - 4.99</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 5 - 7.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 8 - 9.99</td>
+																		<td class="text-right text-green">+5 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 10 - 11.9</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 12+</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2">
+													<div class="gamedetails">
+														<h5><img src="images/fielding.svg"/> Fielding</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Catch</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Stumping</td>
+																		<td class="text-right text-green">+15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">Run Out (Direct Hit)</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>														
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+													<div class="gamedetails mt-gamedetails">
+														<h5><img src="images/stump.svg"/> Additional Points</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Captain Points</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Vice-Captain Points</td>
+																		<td class="text-right text-green">+1.5 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">In Announced Lineups</td>
+																		<td class="text-right text-green">+3 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->												
+												</div><!--col-md-3-->
+											</div><!--row-->
+											<div class="row">
+												<div class="col-md-12">
+													<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+														<div class="accordion">
+															<div class="accordion-inner">
+																<div class="accordion-title">
+																	<h4><img src="images/info.svg"/> Other Information Points</h4>
+																</div>
+																<div class="accordion-content">
+																<div class="accordion-container row p-3 position-relative">
+																	<div class="inner col-12">
+																		<h4>You can select Minimum of 10 players from a single team</h4>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/wicket-keeper.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Wicket-Keeper</h6>
+																				<p>You can select Minimum of 1 to Maximum 8 Wicket-Keeper</p>
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/batsmen.svg" alt="">
+																				</div>
+																			</div>
+																			<div class="ml-4 info-container">
+																				<h6 >Batsmen</h6>
+																				<p>You can select Minimum of 1 to Maximum 8 Batsmen</p>
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/all-rounders.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >All-Rounders</h6>
+																				<p>You can select Minimum of 1 to Maximum 8 All-Rounder</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/bowlers.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Bowlers</h6>
+																				<p>You can select Minimum of 1 to Maximum 8 Bowlers</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/captain.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Captain</h6>
+																				<p>Get 2x the scored points</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/vice-captain.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Vice-Captain</h6>
+																				<p>Get 1.5x the scored points</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/credits-allocation.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >CREDITS Allocated (100)</h6>
+																				<p>The total value of your squad must be less than or equal to  <br> the allocated CREDITS value i.e.100</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/Batting.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Batting</h6>
+																				<p>The players you select as your Fantasy Cricket squad’s Captain and Vice-Captain will receive 2 and 1.5 times the points for their performance.</p>
+																				<p>Strike rate scoring is applicable only when the player scores 10 runs and above or faced 10 balls and above.</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/Bowling.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Bowling</h6>
+																				<p>Economy rate is applicable only when the player bowls atleast 1 overs.</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/Fielding.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Fielding</h6>
+																				<p>10 points for each catch resulting in a fall of wicket.
+																				</p>
+																				<p>
+																					15 points for each stumping resulting in a fall of wicket.
+																				</p>
+																				<p>
+																					10 points for a run-out (The run-out bonus points will only go to the fielder responsible for the throw, not the fielder who removes the bails).</p>
+																				</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/general-points.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >General Points</h6>
+																				<p>3 points for playing the match.</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/captain-&-vice-captain.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Captain & Vice-Captain</h6>
+																				<p>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 2 times in case player is declared by the user of that virtual squad as the 'Captain' of such squad.
+																					
+																				</p>
+																				<p>
+																					All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 1.5 times in case player is declared by the user of that virtual squad as the ‘Vice Captain’ of such squad.</p>
+																				
+																			</div>
+																		</div>
+																		<div class="details-container mb-4">
+																			<div class="icons">
+																				<div class="icon-container">
+																					<img src="./icons/cricket/things-to-note.svg" alt="">
+																				</div>
+																			</div>
+
+																			<div class="ml-4 info-container">
+																				<h6 >Things to note.</h6>
+																				<p>No points will be awarded for the player during a Super Over or a Super Five.</p>
+																				
+																			</div>
+																		</div>
+																	</div><!-- /.inner -->
+																	<div class="accordion-image-container col-6 position-absolute right-0 mt-3 mr-3">
+																		<div >
+																			<img class="accordion-image w-100" src="./icons/cricket//cricket-accordion-img.png" alt="">
+																		</div>
+																	</div>
+																</div>
+																</div>
+															</div><!-- /.accordion-inner -->
+														</div>
+													</div><!--accordion-grp-->
+												</div><!--col-md-12-->
+											</div><!--row-->
+											<div class="row">
+												<div class="col-md-12">
+													<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+														<div class="accordion">
+															<div class="accordion-inner">
+																<div class="accordion-title">
+																	<h4><img src="images/info.svg"> Hotsports Fantasy tips and tricks</h4>
+																</div>
+																<div class="accordion-content">
+																	<div class="inner">
+																		<p>The current trend is fantasy cricket these days. Millions of sports lovers prefer playing fantasy cricket daily, winning real money, and making their entertainment more exciting. The objective of fantasy cricket is to select your team by using your cricket knowledge by using real on-pitch players and compete with other players online. The team scores the points based on the performances of the selected players in the match. The higher your team scores the better your odds of winning prizes in international and domestic leagues like the T20 World Cup and India T20 League.
+																			To maximize your winning and earn the highest number of points Read the tips and tricks provided by us given below.</p>
+																		
+																		<h6 class="mt-4">Fantasy Premier League tips</h6>
+																		<ul>
+																			<li>Fantasy cricket tests your knowledge of the sport, decision-making ability, and analytical skills. With a few simple tricks, one can easily win big on fantasy cricket. Take a look at our exclusive fantasy cricket tips and tricks made by our experts.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Look out for toss and Playing XI</h6>
+																		<ul>
+																			<li>The most basic thing is to select the players playing on the pitch. At hotsports, we provide updates on whether a particular player is playing or not. You can also get this information on other cricket websites but to provide user convenience we provide the details too. Selecting a player who is injured or not in playing 11 means going to a contest with a 10-man team which is a big loss. We recommend you to select your playing 11 carefully and play with a full-strength team.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Keep players recent form and potential in mind</h6>
+																		<ul>
+																			<li>A player’s form is something which should be considered while selecting a fantasy team, one should not make a decision merely on favouritism but select players carefully by observing their current form and potential. A lot of players usually make the mistake of selecting the player who played a big inning in previous match. One must always remember the everyday is different with different scenarios and situation and select the players based on potential and analyses their record against the opponent which is also very important while picking a player in your team.</li>
+																			<li>For example, you should not pick a spinner who has picked three wickets in the previous game on a pitch which has absolutely no turn to offer.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Check the pitch report</h6>
+																		<ul>
+																			<li>Pitch conditions are one of the underrated fantasy cricket tips and it plays a major role in any cricket match. You need to identify whether the pitch is a high-scoring one or a low-scoring one. According to that, you should pick more batters or bowlers. For example, if it is a flat pitch, we recommend you to use more batsmen on your team and a slow and dry pitch is more suitable for spinners. It is all about choosing your players according to the conditions.</li>
+																			<li>Another major aspect to consider is the amount of spin and swing the pitch has to offer. While most pitches on the subcontinent are favorable to spinners, green pitches offer more carry and help the pace bowlers. You can get more information about the pitch before the match on our fantasy blog section.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Study the weather forecast</h6>
+																		<ul>
+																			<li>Picking a team is tricky when the weather is unstable for the game. Although you might have selected a perfect team for a full game but rain may throw all your strategies out of the window, Fantasy players should be aware of the weather forecast while selecting their teams. For example, if there is a chance of rain before the match. The pitch might be moist and it offers more swing to the bowlers. In that case, one must include more bowlers from the team bowling first to gain an advantage and win valuable points. In case there are chances of the match getting shortened, in that case, you should select top-order players from both teams.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Choose your captain and vice-captain wisely.</h6>
+																		<ul>
+																			<li>In fantasy cricket, all the players on your team are required to perform for you to score well and win. Choosing your captain and vice-captain is crucial for you to skyrocket your chances of winning because the captain gets 2x of the points and the vice-captain gets 1.5x points for their game performances. You must give top priority to your captain and vice-captain because they could win a contest for you.</li>
+																			<li>Although there aren’t any specific fantasy tips for choosing a good captain and vice-captain, Allrounders who can bat in top order and bowl well are probably the ideal choice for these crucial roles</li>
+																		</ul>
+
+																		<h4 class="mt-4">Fantasy Cricket tips</h4>
+																		<h6 class="mt-4">Select top-order batsman</h6>
+
+																		<ul>
+																			<li>Selecting top-order batters for your team will increase your chances of winning, especially in T20s and ODIs because of powerplay the batsman gets more chances to score more boundaries and runs which eventually leads to more fantasy points. Prioritize selecting top and middle order batsman over low order because he might not get a chance to bat. This factor becomes more important in the short game format. A top-order batsman gets the most number of overs to face irrespective of the format and has the probability of scoring the most points. So, choosing a player who bats in the top 3 from both teams can increase your chances of scoring the most points in the match.</li>
+																		</ul>
+																		
+																		
+																		
+																		<h6 class="mt-4">Pick wicket-taking bowlers</h6>
+																		<ul>
+																			<li>Picking the right bowlers could be a hard call sometimes. Most of people focus on batters in fantasy cricket, bowlers can also win fantasy league contests.</li>
+																			<li>For example, pick a bowler whose attributes fit right according to the pitch and has the potential to take wickets rather than a bowler who will only bowl economic overs. The number of points allotted for taking wickets is higher than the economy rate of bowlers</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Maintain a balance between batsmen and bowlers.</h6>
+																		<ul>
+																			<li>One of the most important factors for making a fantasy team is to select the right number of batsmen and bowlers on your fantasy team. Depending on the pitch conditions a balance should be maintained. Most of the players tend to pick more batters in their team but this strategy doesn’t hold well in a contest.</li>
+																			<li>Ideally, you should have Four batsmen 4 bowlers 2 All-rounders, and a Wicketkeeper. At hotsports, we provide you flexibility where you can select up to 8 batters 2 wicket-keepers with a minimum of 1 allrounder and bowler. If the pitch is bowling friendly and the match is low scoring where bowlers can perform well in that case, we suggest you choose up to 6 bowlers, and in cases of a batting pitch you can select up to 6 top order batsmen to score most fantasy points, one must study the pitch thoroughly before making his fantasy team.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Create multiple teams and enter multiple contests</h6>
+																		<ul>
+																			<li>Joining Multiple contests and creating multiple teams is a great way to win fantasy league games. A single team offers a safe approach but isn’t always ideal to keep your eggs in one basket, when you enter the contest with multiple teams and multiple contests your chances are increased to win. For example, if you enter a contest of 100 players your chances of winning are 1%, However, if you make more than two teams in the same contest your chances are already doubled, Similarly, we recommend you to enter multiple contests to play and win. We do understand that entering multiple contests can lead to paying more entry fees, but at Hotsports we provide you credit which you can earn by playing games or referring to your friends which can be used to play other contests. This is an underrated trick that can help you to maximize your odds of winning.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Read match predictions.</h6>
+																		<ul>
+																			<li>Match predictions are made by experts who have experience of years and provide good insight into upcoming matches and they provide tips and players to look out for, many experts make predictions a few days in advance or a day before the match. If used correctly the predictions by our experts can play a major role in your fantasy journey in most cases. You can go through such predictions to make informed decisions while selecting or making changes in your team. These predictions are available on the internet and you can read them to know important details like whether the pitch will be helpful to fast bowlers, spinners, or batters. You can select your team accordingly and increase your odds of winning.</li>
+																		</ul>
+																		
+																		<h4 class="mt-4">Tips to Make Your Fantasy Team Today</h4>
+																		<h6 class="mt-4">INVEST SMARTLY (fair play)</h6>
+																		<ul>a fantasy cricket contest you get 100 credit points to select a team of 11 players. Each player is worth a certain number of points which is set by popularity, importance, and form of the player. We suggest you make a balanced team of high-priced players and low-priced players. Try to use all your credit points and select the best possible players in your fantasy team to increase your chances of winning</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Look out for lesser-known players</h6>
+																		<ul>
+																			<li>Unknown players or players making their debut can help you to balance your fantasy team. These players are available for a lower price and they are not picked by the majority of the fantasy players.</li>
+																			<li>However, if the new player performs well then you will get a massive advantage over other players and get more points. An unknown player scoring a half-century in his debut often puts you in a higher rank than a star batsman scoring a fifty. We recommend you go through the new player records previously and under which conditions he performs well and select them accordingly.</li>
+																		</ul>
+																		<h6 class="mt-4">Trust your instincts</h6>
+																		<ul>
+																			<li>We understand that skills and knowledge of the game are important but apart from that you have to trust your instincts while selecting the players for your team. It is like being in a captain’s shoes while deciding on who to give the ball to or whom to send in to bat in a certain match situation. It may work sometimes and may not in some cases.</li>
+																		</ul>
+																		<h6 class="mt-4">Join the right contest</h6>
+																		<ul>
+																			<li>Joining the right contest also plays a major role in winning. While most fantasy users are attracted by the huge prize pools, the chances of winning and competing in those pools are massive. One must not just enter a mega contest without confidence or experience. We suggest our new users play a small pool with fewer players where you can learn from your mistakes develop your skills as a fantasy player and boost your confidence by winning those contests. Once you are confident enough in your skills and in predicting then you can enter the mega contests and win mega prizes. At Hotsports, we provide free contests or contests with very low entry fees for players who are beginners and they can enhance their skills and play high fees contests later.</li>
+																		</ul>
+																		<h6 class="mt-4">Bonus Points</h6>
+																		<ul>
+																			<li>Commonly, you get more points when your selected player performs well like taking a wicket, scoring a boundary, or scoring 50+ or 100+ These achievements contribute to your overall points in the game and it can make a big difference in the result of the contest. Picking big-hitting all-rounders who are also handy on the bowling is an ideal strategy and it Is safe to say using those players as your captain or vice-captain can make your points go even 2x. Additionally, wicket wicketkeepers are also handy in a test match situation because the chances of a batsman getting caught behind the wickets are higher. These bonus points have a big impact on the final result of your game.</li>
+																		</ul>
+																		<h6 class="mt-4">Check for Promo codes</h6>
+																		<ul>
+																			<li>While some players are capable of investing huge amounts in a fantasy contest, others may rely on small amounts to join contests. Promo codes are a great gift for such fantasy players. Hotsports provide several offers like referral bonuses and Hotsports (gst cashback) for players. You can find those contests on our application and avail yourself of those offers while adding cash to your wallet or before joining a contest. These promo codes will help you to play more and win more prizes.</li>
+																		</ul>
+																		<h6 class="mt-4">Disclaimer</h6>
+																		<ul>
+																			<li>Above are tips and tricks for creating fantasy teams and we strongly suggest that users create teams with their cricket knowledge analysis and recent player performance. The above tips and tricks are provided for users to get a clear idea about fantasy gaming and Hotsports are not responsible for users who win or lose it's the sole responsibility of the end user to play responsibly</li>
+																		</ul>
+																	</div><!-- /.inner -->
+																</div>
+															</div><!-- /.accordion-inner -->
+														</div>
+													</div><!--accordion-grp-->
+												</div><!--col-md-12-->
+											</div>
+											<!-- added -->
+										</div><!--tab_in_cont-->																					
+									</div><!--tab-pane-->
+									<div class="tab-pane" id="odi">
+										<h4>Hotsport Points (ODI)</h4>
+											<div class="tab_in_cont">
+												<div class="row">
+												<div class="col-md-4 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/batting.svg"/> Batting</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">For every run scored</td>
+																		<td class="text-right text-green">+1 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Duck Out (Not applicable for bowlers)</td>
+																		<td class="text-right text-red">-20 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 4 hit</td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 6 hit</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">50 - 99 Runs</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">100 - 149 Runs</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">150 - 199 Runs</td>
+																		<td class="text-right text-green">+30 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">200+ Runs</td>
+																		<td class="text-right text-green">+50 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Strike Rate (Except Bowler) Points</strong> (Min 25 Balls To Be Played or Min scores 25 runs)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate < 49.9</td>
+																		<td class="text-right text-red">-25 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 50 - 74.9</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 75 - 124.99</td>
+																		<td class="text-right text-red">0 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 125 - 149.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 150+</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/bowling.svg"/> Bowling</h5>
+															<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Per wicket taken</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every dot ball </td>
+																		<td class="text-right text-red">0 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every maiden</td>
+																		<td class="text-right text-green">+10 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">2 Wickets</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">2 Wickets and every wicket thereafter</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Economy Rate Points</strong> (Min 2 Overs To Be Bowled)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate : 0 - 3.99</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate : 4 - 4.9</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate : 5 - 5.9</td>
+																		<td class="text-right text-red">0 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate : 6 - 6.9</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate : 7+</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2">
+													<div class="gamedetails">
+														<h5><img src="images/fielding.svg"/> Fielding</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Catch</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Stumping</td>
+																		<td class="text-right text-green">+15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">Run Out (Direct Hit)</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+													<div class="gamedetails mt-gamedetails">
+														<h5><img src="images/stump.svg"/> Additional Points</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Captain Points</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Vice-Captain Points</td>
+																		<td class="text-right text-green">+1.5 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">In Announced Lineups</td>
+																		<td class="text-right text-green">+3 pts</td>
+																	</tr>														
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->													
+												</div><!--col-md-3-->
+											</div><!--row-->
+											<div class="row">
+												<div class="col-md-12">
+													<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+														<div class="accordion">
+															<div class="accordion-inner">
+																<div class="accordion-title">
+																	<h4><img src="images/info.svg"/> Other Information Points</h4>
+																</div>
+																<div class="accordion-content">
+																	<div class="inner">
+																		<h4>You can select Minimum of 10 players from a single team</h4>
+																		
+																		<h6 class="mt-4">Wicket-Keeper</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Wicket-Keeper</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Batsmen</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Batsmen</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">All-Rounders</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 All-Rounder</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowlers</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Bowlers</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain</h6>
+																		<ul>
+																			<li>Get 2x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Vice-Captain</h6>
+																		<ul>
+																			<li>Get 1.5x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">CREDITS Allocated (100)</h6>
+																		<ul>
+																			<li>The total value of your squad must be less than or equal to the allocated CREDITS value i.e.100</li>
+																		</ul>
+																		
+																		
+																		<h6 class="mt-4">Batting</h6>
+																		<ul>
+																			<li>The players you select as your Fantasy Cricket squad’s Captain and Vice-Captain will receive 2 and 1.5 times the points for their performance.</li>
+																			<li>Strike rate scoring is applicable only when the player scores 25 runs and above or faced 25 balls and above.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowling</h6>
+																		<ul>
+																			<li>Economy rate is applicable only when the player bowls atleast 2 overs.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Fielding</h6>
+																		<ul>
+																			<li>10 points for each catch resulting in a fall of wicket.</li>
+																			<li>15 points for each stumping resulting in a fall of wicket.</li>
+																			<li>15 points for a run-out (The run-out bonus points will only go to the fielder responsible for the throw, not the fielder who removes the bails).</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">General Points</h6>
+																		<ul>
+																			<li>3 points for playing the match.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain & Vice-Captain</h6>
+																		<ul>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 2 times in case player is declared by the user of that virtual squad as the 'Captain' of such squad.</li>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 1.5 times in case player is declared by the user of that virtual squad as the ‘Vice Captain’ of such squad.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Things to note.</h6>
+																		<ul>
+																			<li>No points will be awarded for the player during a Super Over or a Super Five.</li>
+																		</ul>
+																	</div><!-- /.inner -->
+																</div>
+															</div><!-- /.accordion-inner -->
+														</div>
+													</div><!--accordion-grp-->
+												</div><!--col-md-12-->
+											</div><!--row-->
+										</div><!--tab_in_cont-->											
+									</div><!--tab-pane-->
+									<div class="tab-pane" id="test">
+										<h4>Hotsport Points (TEST)</h4>
+										<div class="tab_in_cont">
+											<div class="row">
+												<div class="col-md-4 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/batting.svg"/> Batting</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">For every run scored</td>
+																		<td class="text-right text-green">+1 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Duck Out (Not applicable for bowlers)</td>
+																		<td class="text-right text-red">-15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 4 hit</td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 6 hit</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">50 - 99 Runs</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">100 - 199 Runs</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">200+ Runs</td>
+																		<td class="text-right text-green">+50 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate</td>
+																		<td class="text-right pl-0">Not Considered</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->													
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/bowling.svg"/> Bowling</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Per wicket taken</td>
+																		<td class="text-right text-green">+30 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every dot ball </td>
+																		<td class="text-right text-red">0 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every maiden</td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">5 Wicket haul</td>
+																		<td class="text-right text-green">+50 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy Rate Points</td>
+																		<td class="text-right">Not Considered</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2">
+													<div class="gamedetails">
+														<h5><img src="images/fielding.svg"/> Fielding</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Catch</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Stumping</td>
+																		<td class="text-right text-green">+15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">Run Out (Direct Hit)</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>														
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+													<div class="gamedetails mt-gamedetails">
+														<h5><img src="images/stump.svg"/> Additional Points</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Captain Points</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Vice-Captain Points</td>
+																		<td class="text-right text-green">+1.5 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">In Announced Lineups</td>
+																		<td class="text-right text-green">+3 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+											</div><!--row-->
+											<div class="row">
+												<div class="col-md-12">
+													<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+														<div class="accordion">
+															<div class="accordion-inner">
+																<div class="accordion-title">
+																	<h4><img src="images/info.svg"/> Other Information Points</h4>
+																</div>
+																<div class="accordion-content">
+																	<div class="inner">
+																		<h4>You can select Minimum of 10 players from a single team</h4>
+																		
+																		<h6 class="mt-4">Wicket-Keeper</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Wicket-Keeper</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Batsmen</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Batsmen</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">All-Rounders</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 All-Rounder</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowlers</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Bowlers</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain</h6>
+																		<ul>
+																			<li>Get 2x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Vice-Captain</h6>
+																		<ul>
+																			<li>Get 1.5x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">CREDITS Allocated (100)</h6>
+																		<ul>
+																			<li>The total value of your squad must be less than or equal to the allocated CREDITS value i.e.100</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Batting</h6>
+																		<ul>
+																			<li>The players you select as your Fantasy Cricket squad’s Captain and Vice-Captain will receive 2 and 1.5 times the points for their performance.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Fielding</h6>
+																		<ul>
+																			<li>10 points for each catch resulting in a fall of wicket.</li>
+																			<li>15 points for each stumping resulting in a fall of wicket.</li>
+																			<li>15 points for a run-out (The run-out bonus points will only go to the fielder responsible for the throw, not the fielder who removes the bails).</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">General Points</h6>
+																		<ul>
+																			<li>3 points for playing the match.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain & Vice-Captain</h6>
+																		<ul>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 2 times in case player is declared by the user of that virtual squad as the 'Captain' of such squad.</li>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 1.5 times in case player is declared by the user of that virtual squad as the ‘Vice Captain’ of such squad.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Things to note.</h6>
+																		<ul>
+																			<li>No points will be awarded for the player during a Super Over or a Super Five.</li>
+																		</ul>
+																	</div><!-- /.inner -->
+																</div>
+															</div><!-- /.accordion-inner -->
+														</div>
+													</div><!--accordion-grp-->
+												</div><!--col-md-12-->
+											</div><!--row-->
+										</div><!--tab_in_cont-->
+									</div><!--tab-pane-->
+									<div class="tab-pane" id="t10">
+										<h4>Hotsport Points (T10)</h4>
+										<div class="tab_in_cont">
+											<div class="row">
+												<div class="col-md-4 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/batting.svg"/> Batting</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">For every run scored</td>
+																		<td class="text-right text-green">+1 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Duck Out (Not applicable for bowlers)</td>
+																		<td class="text-right text-red">-15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 4 hit</td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 6 hit</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">15-29 Runs Bonus</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">30-49 Runs Bonus</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">50 - 74 Runs</td>
+																		<td class="text-right text-green">+30 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">75-99 Runs Bonus</td>
+																		<td class="text-right text-green">+50 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">100+ Runs</td>
+																		<td class="text-right text-green">+75 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Strike Rate (Except Bowler) Points</strong> (Min 5 Balls To Be Played or Min scores 5 runs)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 0 - 99</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>	
+																	<tr>
+																		<td class="text-left">Strike Rate 100 - 119.99</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 120 - 149.99</td>
+																		<td class="text-right text-green">+5 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 150 - 199.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 200+</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>																	
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->													
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/bowling.svg"/> Bowling</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Per wicket taken</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every dot ball </td>
+																		<td class="text-right text-red">0 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every maiden</td>
+																		<td class="text-right text-green">+30 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">2 Wickets</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Every wicket thereafter</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Economy Rate Points</strong> (Min 2 Overs To Be Bowled)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate below 6</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 6 - 7.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 8 - 9.99</td>
+																		<td class="text-right text-red">0 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 10 - 11.9</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 12+</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2">
+													<div class="gamedetails">
+														<h5><img src="images/fielding.svg"/> Fielding</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Catch</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Stumping</td>
+																		<td class="text-right text-green">+15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">Run Out (Direct Hit)</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>														
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+													<div class="gamedetails mt-gamedetails">
+														<h5><img src="images/stump.svg"/> Additional Points</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Captain Points</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Vice-Captain Points</td>
+																		<td class="text-right text-green">+1.5 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">In Announced Lineups</td>
+																		<td class="text-right text-green">+3 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+											</div><!--row-->
+											<div class="row">
+												<div class="col-md-12">
+													<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+														<div class="accordion">
+															<div class="accordion-inner">
+																<div class="accordion-title">
+																	<h4><img src="images/info.svg"/> Other Information Points</h4>
+																</div>
+																<div class="accordion-content">
+																	<div class="inner">
+																		<h4>You can select Minimum of 10 players from a single team</h4>
+																		
+																		<h6 class="mt-4">Wicket-Keeper</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Wicket-Keeper</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Batsmen</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Batsmen</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">All-Rounders</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 All-Rounder</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowlers</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Bowlers</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain</h6>
+																		<ul>
+																			<li>Get 2x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Vice-Captain</h6>
+																		<ul>
+																			<li>Get 1.5x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">CREDITS Allocated (100)</h6>
+																		<ul>
+																			<li>The total value of your squad must be less than or equal to the allocated CREDITS value i.e.100</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Batting</h6>
+																		<ul>
+																			<li>The players you select as your Fantasy Cricket squad’s Captain and Vice-Captain will receive 2 and 1.5 times the points for their performance.</li>
+																			<li>Strike rate scoring is applicable only when the player scores 5 runs and above or faced 5 balls and above.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowling</h6>
+																		<ul>
+																			<li>Economy rate is applicable only when the player bowls atleast 2 overs.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Fielding</h6>
+																		<ul>
+																			<li>10 points for each catch resulting in a fall of wicket.</li>
+																			<li>15 points for each stumping resulting in a fall of wicket.</li>
+																			<li>10 points for a run-out (The run-out bonus points will only go to the fielder responsible for the throw, not the fielder who removes the bails).</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">General Points</h6>
+																		<ul>
+																			<li>3 points for playing the match.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain & Vice-Captain</h6>
+																		<ul>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 2 times in case player is declared by the user of that virtual squad as the 'Captain' of such squad.</li>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 1.5 times in case player is declared by the user of that virtual squad as the ‘Vice Captain’ of such squad.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Things to note.</h6>
+																		<ul>
+																			<li>No points will be awarded for the player during a Super Over or a Super Five.</li>
+																		</ul>
+																	</div><!-- /.inner -->
+																</div>
+															</div><!-- /.accordion-inner -->
+														</div>
+													</div><!--accordion-grp-->
+												</div><!--col-md-12-->
+											</div><!--row-->
+										</div><!--tab_in_cont-->
+									</div><!--tab-pane-->
+									<div class="tab-pane" id="hundred">
+										<h4>Hotsport Points (Hundred)</h4>
+										<div class="tab_in_cont">
+											<div class="row">
+												<div class="col-md-4 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/batting.svg"/> Batting</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">For every run scored</td>
+																		<td class="text-right text-green">+1 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Duck Out (Not applicable for bowlers)</td>
+																		<td class="text-right text-red">-15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 4 hit</td>
+																		<td class="text-right text-green">+1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every 6 hit</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">25-29 Runs Bonus</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">50 - 74 Runs</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">75-99 Runs Bonus</td>
+																		<td class="text-right text-green">+30 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">100+ Runs</td>
+																		<td class="text-right text-green">+50 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 0 - 74.99</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>	
+																	<tr>
+																		<td class="text-left">Strike Rate 75 - 99</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 100 - 149.99</td>
+																		<td class="text-right text-green">+5 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 150 - 199.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Strike Rate 200+</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>																	
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->													
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2 pr-2">
+													<div class="gamedetails">
+														<h5><img src="images/bowling.svg"/> Bowling</h5>
+														<div class="table-responsive">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Per wicket taken</td>
+																		<td class="text-right text-green">+20 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">For every dot ball </td>
+																		<td class="text-right text-green">1 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">2 Wickets</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Every wicket thereafter</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td colspan="2" class="text-left"><strong class="text-primary">Economy Rate Points</strong> (Min 1 Over To Be Bowled)</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate 0 - 4.99</td>
+																		<td class="text-right text-green">+15 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 5 - 7.99</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 8 - 9.99</td>
+																		<td class="text-right text-green">5 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 10 - 11.9</td>
+																		<td class="text-right text-red">-10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Economy rate: 12+</td>
+																		<td class="text-right text-red">-15 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+												<div class="col-md-4 pl-2">
+													<div class="gamedetails">
+														<h5><img src="images/fielding.svg"/> Fielding</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Catch</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Stumping</td>
+																		<td class="text-right text-green">+15 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">Run Out (Direct Hit)</td>
+																		<td class="text-right text-green">+10 pts</td>
+																	</tr>														
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+													<div class="gamedetails mt-gamedetails">
+														<h5><img src="images/stump.svg"/> Additional Points</h5>
+														<div class="table-responsive h-auto">
+															<table class="table table-striped">
+																<tbody>
+																	<tr>
+																		<td class="text-left">Captain Points</td>
+																		<td class="text-right text-green">+2 pts</td>
+																	</tr>
+																	<tr>
+																		<td class="text-left">Vice-Captain Points</td>
+																		<td class="text-right text-green">+1.5 pts</td>
+
+																	</tr>
+																	<tr>
+																		<td class="text-left">In Announced Lineups</td>
+																		<td class="text-right text-green">+3 pts</td>
+																	</tr>															
+																</tbody>
+															</table>
+														</div><!--table-responsive-->
+													</div><!--gamedetails-->
+												</div><!--col-md-3-->
+											</div><!--row-->
+											<div class="row">
+												<div class="col-md-12">
+													<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+														<div class="accordion">
+															<div class="accordion-inner">
+																<div class="accordion-title">
+																	<h4><img src="images/info.svg"/> Other Information Points</h4>
+																</div>
+																<div class="accordion-content">
+																	<div class="inner">
+																		<h4>You can select Minimum of 10 players from a single team</h4>
+																		
+																		<h6 class="mt-4">Wicket-Keeper</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Wicket-Keeper</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Batsmen</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Batsmen</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">All-Rounders</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 All-Rounder</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowlers</h6>
+																		<ul>
+																			<li>You can select Minimum of 1 to Maximum 8 Bowlers</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain</h6>
+																		<ul>
+																			<li>Get 2x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Vice-Captain</h6>
+																		<ul>
+																			<li>Get 1.5x the scored points</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">CREDITS Allocated (100)</h6>
+																		<ul>
+																			<li>The total value of your squad must be less than or equal to the allocated CREDITS value i.e.100</li>
+																		</ul>
+																		
+																		
+																		<h6 class="mt-4">Batting</h6>
+																		<ul>
+																			<li>The players you select as your Fantasy Cricket squad’s Captain and Vice-Captain will receive 2 and 1.5 times the points for their performance.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Bowling</h6>
+																		<ul>
+																			<li>Economy rate is applicable only when the player bowls atleast 1 overs.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Fielding</h6>
+																		<ul>
+																			<li>10 points for each catch resulting in a fall of wicket.</li>
+																			<li>15 points for each stumping resulting in a fall of wicket.</li>
+																			<li>10 points for a run-out (The run-out bonus points will only go to the fielder responsible for the throw, not the fielder who removes the bails).</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">General Points</h6>
+																		<ul>
+																			<li>3 points for playing the match.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Captain & Vice-Captain</h6>
+																		<ul>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 2 times in case player is declared by the user of that virtual squad as the 'Captain' of such squad.</li>
+																			<li>All points attributed to a virtual player, and thereby added to the accumulated points tally of a virtual squad, shall be multiplied by 1.5 times in case player is declared by the user of that virtual squad as the ‘Vice Captain’ of such squad.</li>
+																		</ul>
+																		
+																		<h6 class="mt-4">Things to note.</h6>
+																		<ul>
+																			<li>No points will be awarded for the player during a Super Over or a Super Five.</li>
+																		</ul>
+																	</div><!-- /.inner -->
+																</div>
+															</div><!-- /.accordion-inner -->
+														</div>
+													</div><!--accordion-grp-->
+												</div><!--col-md-12-->
+											</div><!--row-->
+										</div><!--tab_in_cont-->
+									</div><!--tab-pane-->
+								</div><!--tab-content-->
+							</div><!--createsec-->							
+						</div><!--tab-pane-->
+						<div class="tab-pane" id="football">
+							<div class="createsec mt-0">
+								<div class="tab_in_cont">
+
+									<div class="row">
+										<div class="col-md-12">
+											<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+												<div class="accordion">
+													<div class="accordion-inner">
+														<div class="accordion-title">
+															<h4><img src="images/info.svg"> Fantasy Football Player Combinations</h4>
+														</div>
+														<div class="accordion-content" style="display: none;">
+															<div class="accordion-container row p-3 position-relative">
+																<div class="inner col-12">
+																	<!-- <h4>Fantasy Football Player Combinations - Choose Your Starting 11</h4> -->
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/football-player.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >Fantasy Football Player Combinations - Choose Your Starting 11</h6>
+																			<p>Your team must qualify the following team selection criteria</p>
+																			<p>You can select Maximum of 7 players from a single team</p>
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/forwards.svg" alt="">
+																			</div>
+																		</div>
+																		<div class="ml-4 info-container">
+																			<h6 >Forwards</h6>
+																			<p>You can select Minimum of 1 to Maximum 3 Forward</p>
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/midfielders.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >Midfielders</h6>
+																			<p>You can select Minimum of 3 to Maximum 5 Midfielders</p>
+																			
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/goalkeeper.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >Goalkeeper</h6>
+																			<p>You can only select 1 Goalkeeper</p>
+																			
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/defenders.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >Defenders</h6>
+																			<p>You can select Minimum of 3 to Maximum 6 Defenders</p>
+																			
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/captain.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >Captain</h6>
+																			<p>Get 2x the scored points</p>
+																			
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/vice-captain.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >Vice-Captain</h6>
+																			<p>Get 1.5x the scored points</p>
+																			
+																		</div>
+																	</div>
+																	<div class="details-container mb-4">
+																		<div class="icons">
+																			<div class="icon-container">
+																				<img src="./icons/football/credits-allocated.svg" alt="">
+																			</div>
+																		</div>
+
+																		<div class="ml-4 info-container">
+																			<h6 >CREDITS Allocated (100)</h6>
+																			<p>The total value of your squad must be less than or equal to the allocated CREDITS value i.e.100</p>
+																			
+																		</div>
+																	</div>
+																</div><!-- /.inner -->
+																<div class="accordion-image-container col-6 position-absolute right-0 mt-3 mr-3 overflow-hidden">
+																	<div>
+																		<img class="accordion-image w-100" src="./icons/football/football-accordion-img.png" alt="football">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!-- /.accordion-inner -->
+												</div>
+											</div><!--accordion-grp-->
+										</div><!--col-md-12-->
+									</div>
+									<!-- added -->
+									<div class="row">
+										<div class="col-md-12">
+											<div class="faq-accordion accordion-grp" data-grp-name="faq-accordion">
+												<div class="accordion">
+													<div class="accordion-inner">
+														<div class="accordion-title">
+															<h4><img src="images/info.svg"> What is fantasy football?</h4>
+														</div>
+														<div class="accordion-content" style="display: none;">
+															<div class="inner">
+																<ul>
+																	<li>Fantasy football is an online fantasy game where a user makes a virtual team of real player and earn points on the basis of their performance in a real match. You can be your own virtual football manager and select eleven players from both teams. Each player has his own credit points and your main objective is to make a team with best players possible with the credit points provided. After the team has been made you will compete with your team with other fantasy players and the team scoring most points wins the match. Although some luck might increase your chances of winning, fantasy football is a game of skill that require good knowledge of sport and players. Use your analytical abilities to research and select the best players for a match and win the game.</li>
+																</ul>
+																
+																<h6 class="mt-4">Why should you play fantasy football on Hotsports?</h6>
+																<p>We believe that Hotsports is the best app to play fantasy football. Here are some Hotsports feature you will really love:</p>
+																<ol>
+																	<li><b>Quick signup: </b>Simply download the Hotsports app signup using your mobile number and email address and start playing.</li>
+
+																	<li><b>User friendly Interface: </b>Our App has been designed in such a way that you will get the best experience with our user-friendly interface.</li>
+
+																	<li><b>Extensive game lobby: </b>Hotsports has a wide range of fantasy games and contests to choose from. You can look at our upcoming contests on-going contests and much more. Choose your suitable contest and join the match.</li>
+																	<li><b>24/7 customer support: </b>At Hotsports, we firmly believe on customer satisfaction and we provide 24/7 customer support, you can connect with us via call or email and we will be happy to help you out with your query.</li>
+																	<li><b>Dedicated Blogs: </b>We have a dedicated Blog section where we regularly post updates about upcoming matches, fantasy tips and analysis by experts to keep you updated.</li>
+																</ol>
+																
+																<h6 class="mt-4">How to select Players for a fantasy football team?</h6>
+																<p>Fantasy football requires you to create a team of 11 players, including a goal-keeper, defenders, midfielders and strikers.</p>
+																<ol>
+																	<li>Maximum 1 goalkeeper</li>
+																	<li>Minimum 3 and maximum 5 defenders</li>
+																	<li>Minimum 3 and maximum 5 midfielders</li>
+																	<li>Minimum 1 and maximum 3 forwards.</li>
+																	<li>Maximum of 7 platers are allowed from one team.</li>
+																	
+																</ol>
+																
+																<h6 class="mt-4">How to Win Fantasy Football Games?</h6>
+																<ul>
+																	<li>Winning a fantasy football game requires skill, patience and expert analysis. The key to win a fantasy game is to make the best performing team with the given credit amount and roles assigned to players. Hotsports as a platform, provides fantasy football tips and tricks to players by providing players/teams information by which you can make a smart decision. Before making a team, you must consider the players records, past performance, head-to-head results and much more.</li>
+																</ul>
+																
+																<h6 class="mt-4">Fantasy Football Points System</h6>
+																<ul>
+																	<li>The points system in fantasy football works differently from other fantasy games. The criteria to decide points and result of the game is very different from other sports and the way of playing is also different. There are goals instead of runs/points. Tackles/assists instead of wickets /catches and negative points for disciplinary cards.</li>
+																	<li>Here’s how players score points in fantasy football:</li>
+																	<ul>
+																		<li>Every successful tackle or assists earn positive points.</li>
+																		<li>Every goal scored earns positive points.</li>
+																		<li>Every clean sheet earns positive points.</li>
+																		<li>Every clean sheet earns positive points.</li>
+																		<li>Every penalty shot saved earns positive points.</li>
+																		<li>Every goal conceded receives negative points.</li>
+																	</ul>
+																	<li>There are two types of disciplinary cards in football: red and yellow cards. Getting these cards receives negative points.</li>
+																	<ul>
+																		<li>For every Yellow Card received: -1 point</li>
+																		<li>For very Red Card received: -3 points</li>
+																		<li>2 yellow cards in a same match result in a red card.</li>
+																		
+																	</ul>
+																	<li>Any events during Extra time (in game, not penalty shootout) will receive extra points.</li>
+																</ul>
+																
+																<h6 class="mt-4">Fantasy football tips and tricks</h6>
+																<ul>
+																	<li>Fantasy Football is a game of skill and it tests your knowledge of the sport, decision-making ability, and analytical skills. Knowing a few simple tips and tricks is the key to winning these games. Take a look at our tips and tricks provided by our experts to ace fantasy football.</li>
+																	
+																</ul>
+
+																
+																<h6 class="mt-4">Check out Player’s Form</h6>
+
+																<ul>
+																	<li>To win a fantasy football game you need to stay informed about the player’s performance and form in the recent games. It is highly likely that you will go for players with a good career record but they might not be in form currently, or maybe coming off from an injury. So, to play safe, you should pick players who play really well regularly and have performed well in last few games. When done correctly this will help you to maximize your chances of winning a game.</li>
+																</ul>
+																
+																
+																
+																<h6 class="mt-4">Read match predictions</h6>
+																<ul>
+																	<li>Match predictions are made by the experts who give you a good insight for the upcoming games. Many experts make predictions about matches from a few days to hours before the match start. You can go through them to make informed decisions while selecting/changing your team.</li>
+																</ul>
+																
+																<h6 class="mt-4">Invest your credits smartly</h6>
+																<ul>
+																	<li>In fantasy football generally strikers are high priced, but there is no guarantee that every striker will perform well, so it’s important to invest wisely in players. You can invest your credits by choosing a midfielder who can help the team with key passes, create chances, assist or ever score. There are also some players who perform well regularly but are available at lower credits. You can go for such players and select the best team.</li>
+																</ul>
+																
+																<h6 class="mt-4">Choose the Captain and Vice-Captain Wisely</h6>
+																<ul>
+																	<li>In fantasy football captain and vice-captain are the deciding factors in a game. The captain gets 2x points and the vice-captain gets 1.5x points for the same performance as the other players. It is very crucial to consider your options before selecting you captain and vice-captain for your team.</li>
+																	<li>Pro tip: Select the players who score regularly or defenders who can score points in attacks.</li>
+																</ul>
+																
+																<h6 class="mt-4">Select Set-piece Specialist</h6>
+																<ul>
+																	<li>In football there are set-pieces like corners, penalties and free kicks. These situations often give you a chance to score points and goals. Usually, every team has a specific player for the set pieces using that player in your team gives you an advantage over the players who doesn’t include them in their team.</li>
+																</ul>
+																
+																
+																<h6 class="mt-4">Pick the best Goalkeeper</h6>
+																<ul>
+																	<li>
+
+																		You are allowed to have only one goalkeeper on your fantasy football team. It Is crucial to pick the best one available. Before selecting a goal keeper make sure you do your research about the keepers on the team. Take a look at their records and past performances to make an informed decision.
+																	</li>
+																	</ul>
+																
+																<h6 class="mt-4">Keep an eye on substitute players</h6>
+																<ul>
+																	<li>Unlike cricket, substitutes play an important role in the game of football, for example in 2014 world cup finals when Germany used Mario Götze as substitute and he scored the goal which made Germany win the world cup. Substitutes are used very tactically by coaches and are fully involved in the game. Three to five players are used as a substitute in every football match. Choosing the right substitute for your match can be beneficial for your fantasy journey.</li>
+																</ul>
+																<h6 class="mt-4">Avoid Injury Prone Players</h6>
+																<ul>
+																	<li>While making his fantasy team one must be cautious while selecting a player who is coming in straight after recovery from an injury. He might not give his 100% in the game and in most cases, they might be subbed off, to avoid this situation we recommend you to avoid such players and select the players who are fit to play and give you maximum points.</li>
+																</ul>
+																<h6 class="mt-4">Maintain a Balance in the Team</h6>
+																<ul>
+																	<li>While making a team make sure you’re selecting the players worthy for their position and the credit points. There have been many instances when teams with a low-rank players performed exceptionally well against a high rank team with star players. Do not select unreasonably high number of players for the same position. Diversify your team by having star players in every position so that your team doesn’t have to be dependent on a particular area. It is always helpful to maintain a balance of your team to increase your chances of winning.</li>
+																</ul>
+																<h6 class="mt-4">Trust Your Instincts</h6>
+																<ul>
+																	<li>Apart from skill, analysis and knowledge of the game, you have to trust your instinct and go with your gut feeling while selecting the players for your team. A player may not have performed well in past matches or maybe not a popular pick for the upcoming match. So based on your instinct if you select that player and he performs well you will have a better chance of winning the match. We always recommend fantasy players to go with your instinct because at the end of the day it’s your team and one should do what their heart says.</li>
+																</ul>
+																<h6 class="mt-4">Look out for promo codes</h6>
+																<ul>
+																	<li>While some players are capable of investing huge amounts in a fantasy contest, others may rely on small amounts to join contests. Promo codes are a great gift for such fantasy players. Hotsports provide several offers like referral bonuses and Hotsports (gst cashback) for players. You can find those contests on our application and avail yourself of those offers while adding cash to your wallet or before joining a contest. These promo codes will help you to play more and win more prizes.</li>
+																</ul>
+																<h6 class="mt-4">Disclaimer</h6>
+																<ul>
+																	<li>Above are tips and tricks for creating fantasy teams and we strongly suggest that users create teams with their cricket knowledge analysis and recent player performance. The above tips and tricks are provided for users to get a clear idea about fantasy gaming and Hotsports are not responsible for users who win or lose it's the sole responsibility of the end user to play responsibly</li>
+																</ul>
+															</div><!-- /.inner -->
+														</div>
+													</div><!-- /.accordion-inner -->
+												</div>
+											</div><!--accordion-grp-->
+										</div><!--col-md-12-->
+									</div>
+									<!-- added -->
+								</div><!--tab_in_cont-->
+							</div><!--createsec-->							
+						</div><!--tab-pane-->
+					</div><!--tab-content-->
+				</div><!--col-md-12-->
+			</div><!--row-->
+		</div><!--container-->
+	</section>
+		
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footbox border-0">
+          <img src="images/footer-logo.png?v=1.1">
+          <ul class="socmedia">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61556267785544" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_hot.sport_/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/Hotspor79974970" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://studio.youtube.com/channel/UCEgXQFpA9DKf0KcHupNoEJA/editing/images" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.threads.net/@_hot.sport_" target="_blank">
+                <i class="fa-brands fa-threads"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/hot-sport-85b25a312/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--footbox-->
+      </div>
+      <!--col-md-4-->
+      <div class="col-md-3">
+        <div class="footbox">
+          <ul class="footlinks">
+            <li>
+              <a href="play.html">How to Play</a>
+            </li>
+            <li>
+              <a href="pointssystem.html">Point System</a>
+            </li>
+            <li>
+              <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+              <a href="fairplay.html">Fair Play</a>
+            </li>
+          </ul>
+        </div>
+        <!--footbox-->
+      </div>
+      <!--col-md-3-->
+      <div class="col-md-3">
+        <div class="footbox">
+          <ul class="footlinks">
+            <li>
+              <a href="terms.html">Terms &amp; Conditions</a>
+            </li>
+            <li>
+              <a href="privacy.html">Privacy &amp; Policy</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQS</a>
+            </li>
+            <li>
+              <a href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!--footbox-->
+      </div>
+      <!--col-md-3-->
+      <div class="col-md-2 pl-0">
+        <div class="footbox">
+          <ul class="footlinks">
+            <li>
+              <a href="guidelines.html">Community Guidelines</a>
+            </li>
+            <li>
+              <a href="legal.html">Legalities</a>
+            </li>
+            <li>
+              <a href="pdf/Privacy Policy.pdf" target="_blank">Gateway Privacy &amp; Policy</a>
+            </li>
+            <li>
+              <a href="pdf/Terms of Service.pdf" target="_blank">Gateway Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <!--footbox-->
+      </div>
+      <!--col-md-2-->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5>Disclaimer</h5>
+          <p>HotSportsDemo is not connected to or affiliated with:</p>
+          <ol style="font-weight:300;">
+            <li>The International Cricket Council (ICC) or any national cricket board or team.</li>
+            <li>The Board of Control for Cricket in India (BCCI), the Indian Premier League (IPL), or any IPL franchises.</li>
+            <li>Any other domestic cricket tournaments, leagues, or teams, unless specifically mentioned.</li>
+            <li>Soccer organizations such as FIFA, ISL, EPL, or Kolkata Football League.</li>
+            <li>Any other tournaments, leagues, cups, clubs, teams, players, managers, etc.</li>
+          </ol>
+          <p>HotSportsDemo recognizes that the ICC, BCCI, IPL, FIFA, ISL, EPL, Kolkata Football League, and their franchises, as well as national cricket boards, domestic tournament organizers, and the All India Football Federation, own all the names and trademarks related to their tournaments and competitions.</p>
+          <p>We understand that the logos, names, and trademarks are the property of third parties, including sports federations, clubs, teams, leagues, cups, players, managers, and broadcasters. Any use of these logos, names, and marks on HotSportsDemo is only for reference and reporting purposes.</p>
+          <p>Residents of Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, and Sikkim should not play on HotSportsDemo. Please check the relevant laws in your area before using HotSportsDemo. Any legal issues or penalties for breaking the law are the sole responsibility of the user.</p>
+          <p class="mb-0">Copyright ©2024 HotSports. All Rights Reserved</p>
+        </div>
+        <!--col-md-12-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+  </div>
+  <!--footer-bottom-->
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(".accordion").click(function(){
+	  $(this).toggleClass("active");
+	  $(this).find(".accordion-content").slideToggle();
+	});
+</script>
+
+</body>
+</html>
